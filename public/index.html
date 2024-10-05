@@ -10,6 +10,19 @@
     html {
       scroll-behavior: smooth;
     }
+
+    /* Adjust for 16:9 monitors */
+    @media (min-aspect-ratio: 16/9) {
+      .h-screen {
+        height: 100vh; /* Ensure full viewport height */
+      }
+
+      header {
+        height: 56.25vw; /* Aspect ratio of 16:9 */
+      }
+    }
+
+    /* Additional custom styles if needed */
   </style>
   <script>
     function toggleMenu() {
